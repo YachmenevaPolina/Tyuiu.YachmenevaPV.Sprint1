@@ -5,19 +5,10 @@ namespace Tyuiu.YachmenevaPV.Sprint1.Task6.V5.Lib
     {
         public string CheckSymmetricalWords(string value)
         {
-            string[] words = value.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-            string result = "";
-            foreach (string word in words)
-            {
-                string reversed = new string(word.Reverse().ToArray());
-                if (word == reversed)
-                {
-                    if (result.Length > 0) result += " ";
-                    result += word;
-                    
-                }
-            }
-            return result;
+            string reversed = new string(value.Reverse().ToArray());
+            if (value == reversed)
+                return value;
+            return "";
         }
     }
 }
