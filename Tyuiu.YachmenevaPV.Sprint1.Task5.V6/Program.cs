@@ -25,6 +25,11 @@
 
     int day = Convert.ToInt32(ds.Calculate(k));
 
+    Console.WriteLine("***************************************************************************");
+    Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+    Console.WriteLine("***************************************************************************");
+
+
     Console.WriteLine($"День недели для {k}-го дня: {day}");
 
     Console.ReadKey();
